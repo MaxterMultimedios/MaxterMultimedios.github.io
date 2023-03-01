@@ -1,0 +1,343 @@
+/*** GENERALES ***/
+body {
+    background-color: rgb(245, 247, 247);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(94, 102, 100);
+}
+
+h2 {
+    font-weight: bold;
+    color: rgb(86, 86, 87);
+}
+
+h3 {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/*** NAVEGACION ***/
+
+.navbar {
+    padding: 2px;
+    background-color: rgb(102, 207, 202);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*** HERO ***/
+
+.hero img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+}
+
+.hero {
+    min-height: 420px;
+    text-align: center;
+}
+ 
+.hero-principal {
+    padding: 5px;
+    margin-top: 70px;
+}
+
+.hero-imagen-desarrollador {
+    margin: 20px;
+}
+
+.hero-principal h2 {
+    color: rgb(102, 207, 202);
+    font-size: 2rem;
+}
+
+.hero-inferior-imagen {
+    margin-top: 10px;
+}
+
+/*** SOBRE MI ***/
+
+.sobre-mi {
+    background-color: rgb(102, 207, 202);
+    max-width: 800px;
+    margin: 70px 50px 0 50px;
+    padding: 70px 30px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.sobre-mi p {
+    max-width: 500px;
+    font-size: 1.3rem;
+    margin-top: 20px 30px;
+}
+
+/*** EXPREIENCIA ***/
+
+.experiencia {
+    padding: 70px 50px;
+    text-align: center;
+}
+
+.experiencia .columna {
+    padding: 20px;
+    border: 1px solid #8080804d;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+    color:aliceblue;
+    background-color: rgb(90, 89, 89);
+}
+
+.badges-contenedor {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.badges {
+    margin: 5px;
+}
+
+/*** PROYECTOS ***/
+
+.proyectos-recientes {
+    padding: 60px 0 70px 0;
+    background-color: rgb(102, 207, 202);
+}
+
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyecto-contenedor {
+    padding-top: 10px;
+    margin-top: 0px;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.proyecto:hover img {
+    opacity: 1;
+}
+
+.proyecto:hover .overlay {
+    opacity: 0.8;
+}
+
+.overlay i {
+    color: black;
+    font-size: 40px;
+    margin: 10px;
+}
+
+/*** TESTIMONIOS ***/
+
+.testimonios {
+    padding: 70px 40px 50px 40px;
+}
+
+.testimonios img {
+    width: 130px;
+    margin: 0px 10px 20px 10px;
+}
+
+.testimonio-texto {
+    max-width: 70%;
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+}
+
+.testimonio-info {
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonio-info p {
+    margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+    font-size: 1rem;
+}
+
+.testimonio-info .cargo {
+    font-size: 0.8rem;
+    color: rgb(88, 89, 90);
+}
+
+.testimonios .carousel {
+    max-width: 600px;
+}
+
+.carousel-item {
+    height: 450px;
+}
+
+.carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*** CONTACTO ***/
+
+.contacto .container{
+    max-width: 800px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo {
+    margin-bottom: -200px;
+    background-color: rgb(102, 207, 202);
+    border-radius: 30px;
+}
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion {
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.contacto button {
+    color: aliceblue;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+    color: rgb(102, 207, 202);
+    background-color: white;
+    font-size: 1.1rem;
+}
+
+/*** FOOTER ***/
+
+footer {
+    background-color: rgb(84, 85, 85);
+    font-weight: bold;
+}
+
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 60px 0 30px 0;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 3px 11px 4px;
+    margin: 10px;
+    border: 1px solid rgb(102, 207, 202);
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+    color: rgb(102, 207, 202);
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+    border: 1px solid white;
+}
+
+.iconos-redes-sociales a:hover i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.marca-registrada {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*** RESPONSIVE ***/
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .sobre-mi {
+        margin: 70px auto 10px auto;
+    }
+}
